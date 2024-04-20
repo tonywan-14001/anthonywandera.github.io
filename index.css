@@ -1,0 +1,99 @@
+@media only screen and (min-device-width: 601px){
+	
+	.desktop {
+		display: block;
+	}
+	
+	.moblie {
+		display: none;
+	}
+	
+	td.bio {
+		border-top: solid 1px purple;
+		border-left: solid 1px purple;
+		border-bottom: solid 1px purple;
+		width: 40%;
+		border-top-left-radius: 15px;
+		border-bottom-left-radius: 15px;
+	}
+		
+	.profile-pic {
+		width: 100%;
+		border-top-right-radius: 15px;
+		border-bottom-right-radius: 15px;
+	}
+
+}
+@media only screen and (max-device-width : 600px){
+
+	.desktop {
+		display: none;
+	}
+	
+	.moblie {
+		display: block;
+	}
+	
+	td.bio {
+		border-bottom: solid 1px purple;
+		border-left: solid 1px purple;
+		border-right: solid 1px purple;
+		width: 40%;
+		border-bottom-right-radius: 15px;
+		border-bottom-left-radius: 15px;
+	}
+	
+	.profile-pic {
+		width: 100%;
+		border-top-right-radius: 15px;
+		border-top-left-radius: 15px;
+	}
+}
+
+html {
+display: grid;
+height: 100%;
+}
+
+body {
+	background-color: #000011;
+	color: grey;
+	font-family: cursive;
+}
+
+div {
+	padding: 5px;
+}
+	
+abbr {
+	text-decoration: none;
+}
+	
+div.banner, div.bio, div.my-links, div.achievements, div.autobiography, div.journal {
+	border-radius: 10px;
+	border: 1px solid black;
+	background-color: #000022;
+}
+	
+div.achievements, div.autobiography, div.journal {
+	text-align: center
+}
+
+.artwork {
+	max-width: 100%;
+	border-radius: 5px;
+}
+	
+.banner {
+	text-align: center;
+	background-color;
+}
+
+dt {
+	text-decoration: underline;
+}
+
+dl {
+	border: solid 1px grey;
+	border-radius: 5px;
+}
