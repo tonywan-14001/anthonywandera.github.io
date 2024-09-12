@@ -1,1 +1,131 @@
+@media only screen and (min-device-width: 720px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 
+html {
+  display: grid;
+  height: 100%;
+  scrollbar-width: auto;
+}
+
+body {
+  display: grid;
+  margin: 5px;
+  background-image: linear-gradient(-45deg, #00f3c3 50%, #00c3f3 50%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.container {
+  margin: auto;
+  width: fit-content;
+  border: none;
+  border-radius: 25px;
+  background-color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.bio,
+.profile {
+  min-width: 300px;
+  aspect-ratio: 9 / 16;
+  border-radius: 15px;
+  margin: auto;
+}
+
+.bio {
+  background-image: linear-gradient(0deg, #00f3c3, #00c3f3);
+  display: grid;
+  position: relative;
+}
+
+.profile {
+  display: grid;
+}
+
+.content {
+  margin: auto;
+  color: #ffffff;
+  font-size: larger;
+  display: grid;
+  min-width: 90%;
+}
+
+.dp {
+  position: absolute;
+  top: 10px;
+  text-align: center;
+  width: 100%;
+  display: grid;
+}
+
+.name {
+  align-items: center;
+  width: 100%;
+  color: white;
+  font-size: larger;
+  font-family: forte, Arial, Helvetica, cursive, sans-serif;
+  margin: 5px;
+}
+
+.anthony {
+  color: white;
+  width: 60%;
+  aspect-ratio: 1 / 1;
+  border: none;
+  border-radius: 50%;
+  margin: 0px auto;
+  padding: 5px;
+}
+
+button {
+  min-width: 80%;
+  border: none;
+  box-shadow: 0px 0px 5px white;
+  background-image: linear-gradient(
+    -45deg,
+    #00f3c3 70%,
+    #00f3c3 10%,
+    #00c3f3 10%,
+    #00c3f3 10%
+  );
+  border-radius: 15px;
+  padding: 5px;
+  color: white;
+  margin: 15px auto;
+  position: relative;
+  overflow: hidden;
+  opacity: 90%;
+  position: relative;
+}
+
+@keyframes scale {
+  from {
+    opacity: 90%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+button:hover {
+  animation: scale;
+  animation-delay: 0.1s;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.services {
+  margin: 10px auto;
+  width: 100%;
+}
+
+[name="arrow"] {
+  position: absolute;
+  right: 15px;
+  float: right;
+}
